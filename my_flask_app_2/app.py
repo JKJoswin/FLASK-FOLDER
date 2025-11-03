@@ -16,9 +16,10 @@ def calculate():
             return render_template("index.html",error="Please enter a valid year!")
         else:
             age=current_year-birthyear
-            render_template("index.html",age=age)
+            print(age)
+            return render_template("index.html",age=age)
     except ValueError:
-        render_template("index.html",error="Please enter a valid year")
+        return render_template("index.html",error="Please enter a valid year")
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
