@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App|Home</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <div id="card">
+        <h2>Welcome {{username}}!</h2>
+        <p>You are now logged in!</p>
+        <a href="{{url_for('logout')}}">Logout</a>
+    </div>
+</body>
+
+</html>
