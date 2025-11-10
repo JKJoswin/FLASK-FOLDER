@@ -20,7 +20,7 @@
         {% if messages %}
         <ul>
             {% for category,message in messages %}
-            <li style="color:{% if category == 'error' %}red{% else %}green{ % endif %};">
+            <li style="color: {% if category == 'error' %}red{% else %}green{% endif %};">
                 {{message}}
             </li>
             {% endfor %}
